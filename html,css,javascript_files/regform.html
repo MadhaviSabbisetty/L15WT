@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Reg Form</title>
+        <style>
+		body
+{
+ margin:30px;
+background-color:#def;
+color:purple;
+}
+#n,#eid,#c,#ta,#db
+{
+border-color:black;
+border-style:solid;
+    font-family:sans-serif;
+    color:purple;
+
+}
+
+        </style>
+    </head>
+    <body>
+        <center><h1 style="color:red;">REGISTRATION FORM</h1></center>
+        <h3>Please enter your details to get registered to the course</h3>
+        <form name="f1" action="result.html">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="nm" placeholder="Enter your name" max="5" maxlength="30" required="'required" id="n">
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td>
+                    <input type="date" name="dob" required="required" id="db">
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Email Id:</td>
+                <td>
+                    <input type="email" name="em" placeholder="Enter mail id" max="5" maxlength="50" required="required" id="eid">
+                </td>
+            </tr>
+		<tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="Gen" required="required">M
+                    <input type="radio" name="Gen" required="required">F
+                </td>
+            </tr>
+            <tr>
+                <td>Course:</td>
+                <td>
+                    <select >
+                        <option value="A" required="required">AI&ML</option>
+                        <option value="F" required="required">Full stack</option>
+                        <option value="DP" required="required">DSA using python</option>
+                        <option value="J" required="required">Java</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Preferred Languages:</td>
+                <td>
+                    <input type="checkbox" name="ck">English
+                    <input type="checkbox" name="ck" >Hindi
+            </tr>
+            <tr>
+                <td>Contact:</td>
+                <td>
+                <input type="text" name="co" placeholder="Enter mobileno" maxlength="10" required="required" id="c">
+                </td>
+            </tr>
+            <tr>
+                <td>From where did you know about this platform:</td>
+                <td>
+                    <input type="text" name="infoc" max="15" maxlength="50" required="required" id="ta">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit">
+                </td>
+                <td>
+                    <input type="reset" name="reset">
+                </td>
+            </tr>
+        </table>
+
+        </form>
+    </body>
+</html>
+
+
+
+

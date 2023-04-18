@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Restaurant Bill Generator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Restaurant Bill Generator</h1>
+		<form id="order-form">
+			<label for="appetizers">Appetizers:</label>
+			<select id="appetizers" name="appetizers">
+				<option value="0">None</option>
+				<option value="4.99">vegetable salad</option>
+				<option value="5.99">corn soup</option>
+				<option value="6.99">Garlic Bread</option>
+			</select>
+
+			<label for="drinks">Drinks:</label>
+			<select id="drinks" name="drinks">
+				<option value="0">None</option>
+				<option value="2.99">pepsi</option>
+				<option value="4.99">cinderella mocktail</option>
+				<option value="7.99">Margarita</option>
+			</select>
+
+			<label for="desserts">Desserts:</label>
+			<select id="desserts" name="desserts">
+				<option value="0">None</option>
+				<option value="3.99">red velvet cake</option>
+				<option value="4.99">gulab jamun</option>
+				<option value="5.99">vanilla ice-cream</option>
+			</select>
+
+			<input type="submit" id="submit-btn" value="Calculate Total">
+		</form>
+
+		<div id="total-container">
+			<p>Your total is: <span id="total"></span></p>
+		</div>
+	</div>
+
+	<script src="script1.js"></script>
+</body>
+</html>
